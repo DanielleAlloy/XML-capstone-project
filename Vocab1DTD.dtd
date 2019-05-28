@@ -1,0 +1,36 @@
+<!--
+    Macintosh Laptop Computers DTD
+	BCS 303 - Midterm Project
+
+    Filename: Vocab1DTD.dtd
+    Author:   Danielle Hyland
+    Date:     10/10/18
+
+	Filename:          Vocab1DTD.dtd
+	Supporting file:   Vocabulary1.xml
+-->
+<!--Model number descriptions inserted as general entities-->
+<!ENTITY A1708 "13 inch MacBook Pro; Mid 2017">
+<!ENTITY A1989 "13 inch MacBook Pro; Mid 2018">
+<!ENTITY A1990 "15 inch MacBook Pro; Mid 2018">
+	
+<!ELEMENT laptops (computer+) >
+	
+<!ELEMENT computer (model)>
+	
+<!ELEMENT model (desc, specs, price)>
+<!ATTLIST model modelNumber CDATA #REQUIRED>
+	
+<!ELEMENT desc (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price currency CDATA #REQUIRED> 
+	
+<!ELEMENT specs (processor, storageSpace, ram, graphicsCard+, display, touchBar)>
+	
+<!ELEMENT processor (#PCDATA)>
+<!ELEMENT storageSpace (#PCDATA)>
+<!ELEMENT ram (#PCDATA)>
+<!ELEMENT graphicsCard (#PCDATA)>
+<!ELEMENT display (#PCDATA)>
+<!ELEMENT touchBar (#PCDATA)>
+<!ATTLIST touchBar included (Y | N) #REQUIRED>

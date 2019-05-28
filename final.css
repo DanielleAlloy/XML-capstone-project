@@ -1,0 +1,205 @@
+/*
+    BCS 303 - XML
+    Final Project
+
+   Final Project Style Sheet
+   Author: Danielle Hyland 
+   Date:   12/14/18
+
+   Filename:         final.css
+   Supporting Files: none
+
+*/
+
+
+/*Background Style*/
+html {
+    background-color: #336699;
+}
+/* Body styles */
+body {
+    background-color: white;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+    margin: 0px auto;
+    width: 1200px;
+	height: 100%;
+ }
+
+header {
+	padding: 0px;
+	margin: 0px;
+	height: 150px;
+}
+
+ /* Nav bar style */
+nav{
+    background-color: #3399cc;
+    text-align: center;
+    height: 50px;
+    font-size: 24px;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+	background-color: #3399cc;
+	overflow: hidden;
+
+  }
+
+nav li {
+	display: inline-block;
+	padding: 5px;
+	margin-top: 0px;
+}
+
+nav li a{
+	text-decoration: none;
+	text-align: center;
+  	padding: 14px 16px;
+}
+
+nav li a:hover{
+	color: #000000;
+}
+
+
+/*Styles the properties for links */
+a {
+	color:#33ccff;
+}
+
+/*Styles the properties for links when hovered on*/
+a:hover {
+	color: #000000;
+}
+
+/*Styles the properties for links when Visited*/
+a:visited {
+	color: #003366;
+}
+
+/*Styles the properties for h1 tag*/
+h1 {
+	text-align: center;
+}
+
+/*Styles the properties for h2 tag*/
+h2 {
+	text-align: center;
+}
+
+/* Styles the main content */
+#mainContent {
+    margin: 0px auto;
+	padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styles the computer div where each instance of computer will be */
+#computer {
+    border: 1px solid rgba(0,0,0,1.00);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    width: 500px;
+    padding-left: 20px;
+    box-shadow: 5px 5px 10px rgba(131,132,134,1.00);
+    -webkit-box-shadow: 5px 5px 10px rgba(131,132,134,1.00);
+}
+
+#computer h1 {
+    margin-bottom: 0px;
+}
+#computer h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#computer h3 {
+    margin-top: 0px;
+}
+.imgRight {
+	float: right;
+}
+/* Centers text */
+.center {
+	text-align: center;
+}
+
+/* Styles the specs class, and removes the bullet */
+.specs ul{
+    list-style-type: none;
+}
+
+/*Class to indent the if-each statement for better readability */
+.if-indent {
+    padding-left: 20px;
+}
+
+/* Class to center and unbold the totalPrice */
+.price {
+	text-align: center;
+	font-weight: 100;
+	font-size: .80em;
+}
+
+/* Styles the comparison table */
+#compare {
+	width: 100%;
+	border-collapse: collapse;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* Styles the data inside of the table cells */
+#compare td {
+	text-align: center;
+	border: 1px solid #ddd;
+}
+
+/* Styles the table header, black background and white text */
+#compare th {
+	background-color: black;
+	color: white;
+	height: 30px;
+	border: 1px solid #ddd;
+}
+
+/* Adds stiping to the table rows */
+#compare tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+/* Class to center and unbold the totalPrice */
+.priceTable {
+	text-align: center;
+	font-weight: 800;
+}
+/*Turns text green*/
+.yes {
+	color: green;
+}
+
+/*Turns text red*/
+.no {
+	color: red;
+}
+
+/*Home page main content styling*/
+.home {
+	margin: 0px auto;
+	padding-top: 20px;
+}
+
+/*Styles the Footer*/
+footer {
+    text-align: center;
+    font-size: 0.75em;
+	padding-bottom: 10px;
+}

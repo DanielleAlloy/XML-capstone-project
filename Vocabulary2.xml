@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+    Macintosh Desktop Computers Comparison
+	BCS 303 - Final Project Project
+
+    Filename: Vocabulary2.xml
+    Author:   Danielle Hyland
+    Date:     12/03/18
+
+	Filename:          Vocabulary2.xml
+	Supporting file:   Vocab2Schema.xsd, desktops.xsl
+-->
+
+<!--Links the XSL style sheet to the XML file-->
+<?xml-stylesheet type="text/xsl" href="desktops.xsl" ?>
+
+<!--List of different Macintosh Desktop computers-->
+<!--Turns into an instance document and declare that there is no namespace-->
+<desktops xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Vocab2Schema.xsd">
+    <!--First instance of computer element-->
+	<computer>
+	  <model modelNumber="A1418">
+		<desc>21.5" iMac; Mid 2017</desc>
+		<specs>
+			<processor>2.3GHz dual-core Intel Core i5</processor>
+			<storageSpace>1TB hard drive</storageSpace>
+			<ram>8GB</ram>
+            <!--one of more instances of graphicsCard-->
+			<graphicsCard>Intel Iris Plus Graphics 640</graphicsCard>
+			<display>LED-backlit display</display>
+            <!--one of more instances of ports-->
+            <ports>Two Thunderbolt 3 ports</ports>
+            <ports>Four USB 3 ports</ports>
+		</specs>
+		<price currency="USD">1099</price>
+	  </model>
+	</computer>
+    <!--Second instance of computer element-->
+    <computer>
+	  <model modelNumber="A1418">
+		<desc>21.5" iMac; Mid 2017</desc>
+		<specs>
+			<processor>3.0GHz quad‑core Intel Core i5</processor>
+			<storageSpace>1TB hard drive</storageSpace>
+			<ram>8GB</ram>
+            <!--one of more instances of graphicsCard-->
+			<graphicsCard>Radeon Pro 555 with 2GB of VRAM</graphicsCard>
+			<display>Retina 4K display</display>
+            <!--one of more instances of ports-->
+            <ports>Two Thunderbolt 3 ports</ports>
+            <ports>Four USB 3 ports</ports>
+		</specs>
+		<price currency="USD">1299</price>
+	  </model>
+	</computer>        
+    <!--Third instance of computer element-->
+    <computer>
+	  <model modelNumber="A1418">
+		<desc>21.5" iMac; Mid 2017</desc>
+		<specs>
+			<processor>3.4GHz quad‑core Intel Core i5</processor>
+			<storageSpace>1TB Fusion drive</storageSpace>
+			<ram>8GB</ram>
+            <!--one of more instances of graphicsCard-->
+			<graphicsCard>Radeon Pro 560 with 4GB of VRAM</graphicsCard>
+			<display>Retina 4K display</display>
+            <!--one of more instances of ports-->
+            <ports>Two Thunderbolt 3 ports</ports>
+            <ports>Four USB 3 ports</ports>
+		</specs>
+		<price currency="USD">1499</price>
+	  </model>
+	</computer>        
+    <!--Fourth instance of computer element-->
+    <computer>
+	  <model modelNumber="A1419">
+		<desc>27" iMac; Mid 2017</desc>
+		<specs>
+			<processor>3.4GHz quad‑core Intel Core i5</processor>
+			<storageSpace>1TB Fusion drive</storageSpace>
+			<ram>8GB</ram>
+            <!--one of more instances of graphicsCard-->
+			<graphicsCard>Radeon Pro 570 with 4GB of VRAM</graphicsCard>
+			<display>Retina 5K display</display>
+            <!--one of more instances of ports-->
+            <ports>Two Thunderbolt 3 ports</ports>
+            <ports>Four USB 3 ports</ports>
+		</specs>
+		<price currency="USD">1799</price>
+	  </model>
+	</computer>
+    <!--Fifth instance of computer element-->
+    <computer>
+	  <model modelNumber="A1419">
+		<desc>27" iMac; Mid 2017</desc>
+		<specs>
+			<processor>3.5GHz quad‑core Intel Core i5</processor>
+			<storageSpace>1TB Fusion drive</storageSpace>
+			<ram>8GB</ram>
+            <!--one of more instances of graphicsCard-->
+			<graphicsCard>Radeon Pro 575 with 4GB of VRAM</graphicsCard>
+			<display>Retina 5K display</display>
+            <!--one of more instances of ports-->
+            <ports>Two Thunderbolt 3 ports</ports>
+            <ports>Four USB 3 ports</ports>
+		</specs>
+		<price currency="USD">1999</price>
+	  </model>
+	</computer>
+    <!--Sixth instance of computer element-->
+    <computer>
+	  <model modelNumber="A1419">
+		<desc>27" iMac; Mid 2017</desc>
+		<specs>
+			<processor>3.8GHz quad‑core Intel Core i5 </processor>
+			<storageSpace>2TB Fusion drive</storageSpace>
+			<ram>8GB</ram>
+            <!--one of more instances of graphicsCard-->
+			<graphicsCard>Radeon Pro 580 with 8GB of VRAM</graphicsCard>
+			<display>Retina 5K display</display>
+            <!--one of more instances of ports-->
+            <ports>Two Thunderbolt 3 ports</ports>
+            <ports>Four USB 3 ports</ports>
+		</specs>
+		<price currency="USD">2299</price>
+	  </model>
+	</computer>
+</desktops>

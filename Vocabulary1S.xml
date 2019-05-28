@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+    Macintosh Laptop Computers Comparison 
+		BCS 303 - Final Project
+
+    Filename: Vocabulary1S.xml
+    Author:   Danielle Hyland
+    Date:     12/03/18
+
+	Filename:          Vocabulary1S.xml
+	Supporting file:   Vocab1Schema.xsd, laptops.xsl
+-->
+<!--Links the XSL style sheet to the XML file-->
+<?xml-stylesheet type="text/xsl" href="laptops.xsl" ?>
+
+<!--List of different Macintosh Laptop computers-->
+<!--Turns into an instance document and declare that there is no namespace-->
+<laptops xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="Vocab1Schema.xsd">
+    <!--First instance of computer element-->
+	<computer>
+	  <model modelNumber="A1708">
+		<desc>13" MacBook Pro; Mid 2017</desc>
+		<specs>
+			<processor>2.3GHz dual-core Intel Core i5</processor>
+			<storageSpace>128 GB</storageSpace>
+			<ram>8GB</ram>
+			<graphicsCard>Intel Iris Plus Graphics 640</graphicsCard>
+			<display>Retina display</display>
+			<touchBar included="N">no</touchBar>
+		</specs>
+		<price currency="USD">1299</price>
+	  </model>
+	</computer>
+    <!--Second instance of computer element-->
+    <computer>
+	  <model modelNumber="A1708">
+		<desc>13" MacBook Pro; Mid 2017</desc>
+		<specs>
+			<processor>2.3GHz dual-core Intel Core i5</processor>
+			<storageSpace>256 GB SSD</storageSpace>
+			<ram>8GB</ram>
+			<!--one of more instances of graphicsCard-->
+			<graphicsCard>Intel Iris Plus Graphics 640</graphicsCard>
+			<display>Retina display</display>
+			<touchBar included="N">no</touchBar>
+		</specs>
+		<price currency="USD">1499</price>
+	  </model>
+	</computer>        
+    <!--Third instance of computer element-->
+    <computer>
+	  <model modelNumber="A1989">
+		<desc>13" MacBook Pro; Mid 2018</desc>
+		<specs>
+			<processor>2.3GHz quad-core Intel Core i5</processor>
+			<storageSpace>256GB SSD</storageSpace>
+			<ram>8GB</ram>
+			<!--one of more instances of graphicsCard-->
+			<graphicsCard>Intel Iris Plus Graphics 655</graphicsCard>
+			<display>Retina display</display>
+			<touchBar included="Y">yes</touchBar>
+		</specs>
+		<price currency="USD">1799</price>
+	  </model>
+	</computer>        
+    <!--Fourth instance of computer element-->
+    <computer>
+	  <model modelNumber="A1989">
+		<desc>13" MacBook Pro; Mid 2018</desc>
+		<specs>
+			<processor>2.3GHz quad-core Intel Core i5</processor>
+			<storageSpace>512 GB SSD</storageSpace>
+			<ram>8GB</ram>
+			<!--one of more instances of graphicsCard-->
+			<graphicsCard>Intel Iris Plus Graphics 655</graphicsCard>
+			<display>Retina display</display>
+			<touchBar included="Y">yes</touchBar>
+		</specs>
+		<price currency="USD">1999</price>
+	  </model>
+	</computer>
+    <!--Fifth instance of computer element-->
+    <computer>
+	  <model modelNumber="A1990">
+		<desc>15" MacBook Pro; Mid 2018</desc>
+		<specs>
+			<processor>2.2GHz 6-core Intel Core i7</processor>
+			<storageSpace>256 GB SSD</storageSpace>
+			<ram>16GB</ram>
+			<!--one of more instances of graphicsCard-->
+			<graphicsCard>Radeon Pro 555X with 4GB of GDDR5 memory</graphicsCard>
+      <graphicsCard>Intel UHD Graphics 630</graphicsCard>
+			<display>Retina display</display>
+			<touchBar included="Y">yes</touchBar>
+		</specs>
+		<price currency="USD">2399</price>
+	  </model>
+    </computer>
+    <!--Sixth instance of computer element-->
+    <computer>
+	  <model modelNumber="A1990">
+		<desc>15" MacBook Pro; Mid 2018</desc>
+		<specs>
+			<processor>2.6GHz 6-core Intel Core i7</processor>
+			<storageSpace>512 GB SSD</storageSpace>
+			<ram>16GB</ram>
+			<!--one of more instances of graphicsCard-->
+			<graphicsCard>Radeon Pro 560X with 4GB of GDDR5 memory</graphicsCard>
+      <graphicsCard>Intel UHD Graphics 630</graphicsCard>
+			<display>Retina display</display>
+			<touchBar included="Y">yes</touchBar>
+		</specs>
+		<price currency="USD">2799</price>
+	  </model>
+    </computer>
+</laptops>

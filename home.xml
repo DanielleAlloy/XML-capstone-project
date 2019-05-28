@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+    Macintosh Laptop and Desktop Computers Comparison
+	BCS 303 - Final Project
+
+    Filename: homr.xml
+    Author:   Danielle Hyland
+    Date:     12/03/18
+
+	Filename:          home.xml
+	Supporting file:   combinedSchema.xml, Vocab2bSchema.xsd, home.xsl
+-->
+<!--Links the XSL style sheet to the XML file-->
+<?xml-stylesheet type="text/xsl" href="home.xsl" ?>
+
+<!--This is a compound document containing both Vocabulary1.xml & Vocabulary2.xml-->
+
+<!--List of different Macintosh Laptop computers-->
+<!--Turns into an instance document and declares that the document has a namespace-->
+<!--Declares the namespace and schema location-->
+<lap:laptops xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:lap="http://example.com/laptops"
+             xsi:schemaLocation="http://example.com/laptops combinedSchema.xsd">
+
+    <!--First instance of computer element-->
+	<lap:computer>
+	  <lap:model lap:modelNumber="A1708">
+		<lap:desc>13" MacBook Pro; Mid 2017</lap:desc>
+		<lap:specs>
+			<lap:processor>2.3GHz dual-core Intel Core i5</lap:processor>
+			<lap:storageSpace>128 GB</lap:storageSpace>
+			<lap:ram>8GB</lap:ram>
+			<lap:graphicsCard>Intel Iris Plus Graphics 640</lap:graphicsCard>
+			<lap:display>Retina display</lap:display>
+			<lap:touchBar lap:included="N">no</lap:touchBar>
+		</lap:specs>
+		<lap:price lap:currency="USD">1299</lap:price>
+	  </lap:model>
+	</lap:computer>
+    <!--Second instance of computer element-->
+    <lap:computer>
+	  <lap:model lap:modelNumber="A1708">
+		<lap:desc>13" MacBook Pro; Mid 2017</lap:desc>
+		<lap:specs>
+			<lap:processor>2.3GHz dual-core Intel Core i5</lap:processor>
+			<lap:storageSpace>256 GB SSD</lap:storageSpace>
+			<lap:ram>8GB</lap:ram>
+			<!--one of more instances of graphicsCard-->
+			<lap:graphicsCard>Intel Iris Plus Graphics 640</lap:graphicsCard>
+			<lap:display>Retina display</lap:display>
+			<lap:touchBar lap:included="N">no</lap:touchBar>
+		</lap:specs>
+		<lap:price lap:currency="USD">1499</lap:price>
+	  </lap:model>
+	</lap:computer>        
+    <!--Third instance of computer element-->
+    <lap:computer>
+	  <lap:model lap:modelNumber="A1989">
+		<lap:desc>13" MacBook Pro; Mid 2018</lap:desc>
+		<lap:specs>
+			<lap:processor>2.3GHz quad-core Intel Core i5</lap:processor>
+			<lap:storageSpace>256GB SSD</lap:storageSpace>
+			<lap:ram>8GB</lap:ram>
+			<!--one of more instances of graphicsCard-->
+			<lap:graphicsCard>Intel Iris Plus Graphics 655</lap:graphicsCard>
+			<lap:display>Retina display</lap:display>
+			<lap:touchBar lap:included="Y">yes</lap:touchBar>
+		</lap:specs>
+		<lap:price lap:currency="USD">1799</lap:price>
+	  </lap:model>
+	</lap:computer>        
+    <!--Fourth instance of computer element-->
+    <lap:computer>
+	  <lap:model lap:modelNumber="A1989">
+		<lap:desc>13" MacBook Pro; Mid 2018</lap:desc>
+		<lap:specs>
+			<lap:processor>2.3GHz quad-core Intel Core i5</lap:processor>
+			<lap:storageSpace>512 GB SSD</lap:storageSpace>
+			<lap:ram>8GB</lap:ram>
+			<!--one of more instances of graphicsCard-->
+			<lap:graphicsCard>Intel Iris Plus Graphics 655</lap:graphicsCard>
+			<lap:display>Retina display</lap:display>
+			<lap:touchBar lap:included="Y">yes</lap:touchBar>
+		</lap:specs>
+		<lap:price lap:currency="USD">1999</lap:price>
+	  </lap:model>
+	</lap:computer>
+    <!--Fifth instance of computer element-->
+    <lap:computer>
+	  <lap:model lap:modelNumber="A1990">
+		<lap:desc>15" MacBook Pro; Mid 2018</lap:desc>
+		<lap:specs>
+			<lap:processor>2.2GHz 6-core Intel Core i7</lap:processor>
+			<lap:storageSpace>256 GB SSD</lap:storageSpace>
+			<lap:ram>16GB</lap:ram>
+			<!--one of more instances of graphicsCard-->
+			<lap:graphicsCard>Radeon Pro 555X with 4GB of GDDR5 memory</lap:graphicsCard>
+            <lap:graphicsCard>Intel UHD Graphics 630</lap:graphicsCard>
+			<lap:display>Retina display</lap:display>
+			<lap:touchBar lap:included="Y">yes</lap:touchBar>
+		</lap:specs>
+		<lap:price lap:currency="USD">2399</lap:price>
+	  </lap:model>
+    </lap:computer>
+    <!--Sixth instance of computer element-->
+    <lap:computer>
+	  <lap:model lap:modelNumber="A1990">
+		<lap:desc>15" MacBook Pro; Mid 2018</lap:desc>
+		<lap:specs>
+			<lap:processor>2.6GHz 6-core Intel Core i7</lap:processor>
+			<lap:storageSpace>512 GB SSD</lap:storageSpace>
+			<lap:ram>16GB</lap:ram>
+			<!--one of more instances of graphicsCard-->
+			<lap:graphicsCard>Radeon Pro 560X with 4GB of GDDR5 memory</lap:graphicsCard>
+            <lap:graphicsCard>Intel UHD Graphics 630</lap:graphicsCard>
+			<lap:display>Retina display</lap:display>
+			<lap:touchBar lap:included="Y">yes</lap:touchBar>
+		</lap:specs>
+		<lap:price lap:currency="USD">2799</lap:price>
+	  </lap:model>
+    </lap:computer>
+
+<!--List of different Macintosh Desktop computers-->
+<des:desktops xmlns:des="http://example.com/desktops"
+          	  xsi:schemaLocation="http://example.com/desktop Vocab2bSchema.xsd">
+    <!--First instance of desktop computer element-->
+	<des:computer>
+	  <des:model des:modelNumber="A1418">
+		<des:desc>21.5" iMac; Mid 2017</des:desc>
+		<des:specs>
+			<des:processor>2.3GHz dual-core Intel Core i5</des:processor>
+			<des:storageSpace>1TB hard drive</des:storageSpace>
+			<des:ram>8GB</des:ram>
+            <!--one of more instances of graphicsCard-->
+			<des:graphicsCard>Intel Iris Plus Graphics 640</des:graphicsCard>
+			<des:display>LED-backlit display</des:display>
+            <!--one of more instances of ports-->
+            <des:ports>Two Thunderbolt 3 ports</des:ports>
+            <des:ports>Four USB 3 ports</des:ports>
+		</des:specs>
+		<des:price des:currency="USD">1099</des:price>
+	  </des:model>
+	</des:computer>
+    <!--Second instance of desktop computer element-->
+    <des:computer>
+	  <des:model des:modelNumber="A1418">
+		<des:desc>21.5" iMac; Mid 2017</des:desc>
+		<des:specs>
+			<des:processor>3.0GHz quad‑core Intel Core i5</des:processor>
+			<des:storageSpace>1TB hard drive</des:storageSpace>
+			<des:ram>8GB</des:ram>
+            <!--one of more instances of graphicsCard-->
+			<des:graphicsCard>Radeon Pro 555 with 2GB of VRAM</des:graphicsCard>
+			<des:display>Retina 4K display</des:display>
+            <!--one of more instances of ports-->
+            <des:ports>Two Thunderbolt 3 ports</des:ports>
+            <des:ports>Four USB 3 ports</des:ports>
+		</des:specs>
+		<des:price des:currency="USD">1299</des:price>
+	  </des:model>
+	</des:computer>        
+    <!--Third instance of desktop computer element-->
+    <des:computer>
+	  <des:model des:modelNumber="A1418">
+		<des:desc>21.5" iMac; Mid 2017</des:desc>
+		<des:specs>
+			<des:processor>3.4GHz quad‑core Intel Core i5</des:processor>
+			<des:storageSpace>1TB Fusion drive</des:storageSpace>
+			<des:ram>8GB</des:ram>
+            <!--one of more instances of graphicsCard-->
+			<des:graphicsCard>Radeon Pro 560 with 4GB of VRAM</des:graphicsCard>
+			<des:display>Retina 4K display</des:display>
+            <!--one of more instances of ports-->
+            <des:ports>Two Thunderbolt 3 ports</des:ports>
+            <des:ports>Four USB 3 ports</des:ports>
+		</des:specs>
+		<des:price des:currency="USD">1499</des:price>
+	  </des:model>
+	</des:computer>        
+    <!--Fourth instance of desktop computer element-->
+    <des:computer>
+	  <des:model des:modelNumber="A1419">
+		<des:desc>27" iMac; Mid 2017</des:desc>
+		<des:specs>
+			<des:processor>3.4GHz quad‑core Intel Core i5</des:processor>
+			<des:storageSpace>1TB Fusion drive</des:storageSpace>
+			<des:ram>8GB</des:ram>
+            <!--one of more instances of graphicsCard-->
+			<des:graphicsCard>Radeon Pro 570 with 4GB of VRAM</des:graphicsCard>
+			<des:display>Retina 5K display</des:display>
+            <!--one of more instances of ports-->
+            <des:ports>Two Thunderbolt 3 ports</des:ports>
+            <des:ports>Four USB 3 ports</des:ports>
+		</des:specs>
+		<des:price des:currency="USD">1799</des:price>
+	  </des:model>
+	</des:computer>
+    <!--Fifth instance of desktop computer element-->
+    <des:computer>
+	  <des:model des:modelNumber="A1419">
+		<des:desc>27" iMac; Mid 2017</des:desc>
+		<des:specs>
+			<des:processor>3.5GHz quad‑core Intel Core i5</des:processor>
+			<des:storageSpace>1TB Fusion drive</des:storageSpace>
+			<des:ram>8GB</des:ram>
+            <!--one of more instances of graphicsCard-->
+			<des:graphicsCard>Radeon Pro 575 with 4GB of VRAM</des:graphicsCard>
+			<des:display>Retina 5K display</des:display>
+            <!--one of more instances of ports-->
+            <des:ports>Two Thunderbolt 3 ports</des:ports>
+            <des:ports>Four USB 3 ports</des:ports>
+		</des:specs>
+		<des:price des:currency="USD">1999</des:price>
+	  </des:model>
+	</des:computer>
+    <!--Sixth instance of desktop computer element-->
+    <des:computer>
+	  <des:model des:modelNumber="A1419">
+		<des:desc>27" iMac; Mid 2017</des:desc>
+		<des:specs>
+			<des:processor>3.8GHz quad‑core Intel Core i5 </des:processor>
+			<des:storageSpace>2TB Fusion drive</des:storageSpace>
+			<des:ram>8GB</des:ram>
+            <!--one of more instances of graphicsCard-->
+			<des:graphicsCard>Radeon Pro 580 with 8GB of VRAM</des:graphicsCard>
+			<des:display>Retina 5K display</des:display>
+            <!--one of more instances of ports-->
+            <des:ports>Two Thunderbolt 3 ports</des:ports>
+            <des:ports>Four USB 3 ports</des:ports>
+		</des:specs>
+		<des:price des:currency="USD">2299</des:price>
+	  </des:model>
+	</des:computer>
+</des:desktops>
+</lap:laptops>

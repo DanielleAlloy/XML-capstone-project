@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Macintosh Laptop Computers
+	BCS 303 - Midterm Project
+
+    Filename: laptops.xml
+    Author:   Danielle Hyland
+    Date:     10/10/18
+-->
+<?xml-stylesheet type="text/xsl" href="final.xsl" ?>
+
+<laptops>
+	<computer>
+		<name>Macbook Pro</name>
+		<modelNumber>A1708</modelNumber>
+		<size>13"</size>
+		<dateReleased>Mid 2017</dateReleased>
+		<specs>
+			<processor>2.3GHz dual-core Intel Core i5</processor>
+			<storageSpace>128 GB</storageSpace>
+			<ram>8GB</ram>
+			<graphicsCard>Intel Iris Plus Graphics 640</graphicsCard>
+			<display>Retina display</display>
+			<touchBar>no</touchBar>
+		</specs>
+		<price>&#36;1299</price>
+	</computer>
+    <computer>
+		<name>Macbook Pro</name>
+		<modelNumber>A1708</modelNumber>
+		<size>13"</size>
+		<dateReleased>Mid 2017</dateReleased>
+		<specs>
+			<processor>2.3GHz dual-core Intel Core i5</processor>
+			<storageSpace>256 GB</storageSpace>
+			<ram>8GB</ram>
+			<graphicsCard>Intel Iris Plus Graphics 640</graphicsCard>
+			<display>Retina display</display>
+			<touchBar>no</touchBar>
+		</specs>
+		<price>&#36;1499</price>
+	</computer>
+    <computer>
+		<name>Macbook Pro</name>
+		<modelNumber>A1989</modelNumber>
+		<size>13"</size>
+		<dateReleased>Mid 2018</dateReleased>
+		<specs>
+			<processor>2.3GHz quad-core Intel Core i5</processor>
+			<storageSpace>256GB</storageSpace>
+			<ram>8GB</ram>
+			<graphicsCard>Intel Iris Plus Graphics 655</graphicsCard>
+			<display>Retina display</display>
+			<touchBar>yes</touchBar>
+		</specs>
+		<price>&#36;1799</price>
+	</computer>
+    <computer>
+		<name>Macbook Pro</name>
+		<modelNumber>A1989</modelNumber>
+		<size>13"</size>
+		<dateReleased>Mid 2018</dateReleased>
+		<specs>
+			<processor>2.3GHz quad-core Intel Core i5</processor>
+			<storageSpace>512 GB</storageSpace>
+			<ram>8GB</ram>
+			<graphicsCard>Intel Iris Plus Graphics 655</graphicsCard>
+			<display>Retina display</display>
+			<touchBar>yes</touchBar>
+		</specs>
+		<price>&#36;1999</price>
+	</computer>
+    <computer>
+		<name>Macbook Pro</name>
+		<modelNumber>A1990</modelNumber>
+		<size>15"</size>
+		<dateReleased>Mid 2018</dateReleased>
+		<specs>
+			<processor>2.2GHz 6-core Intel Core i7</processor>
+			<storageSpace>256 GB</storageSpace>
+			<ram>16GB</ram>
+			<graphicsCard>Radeon Pro 555X with 4GB of GDDR5 memory</graphicsCard>
+            <graphicsCard>Intel UHD Graphics 630</graphicsCard>
+			<display>Retina display</display>
+			<touchBar>yes</touchBar>
+		</specs>
+		<price>&#36;2399</price>
+    </computer>
+    <computer>
+		<name>Macbook Pro</name>
+		<modelNumber>A1990</modelNumber>
+		<size>15"</size>
+		<dateReleased>Mid 2018</dateReleased>
+		<specs>
+			<processor>2.6GHz 6-core Intel Core i7</processor>
+			<storageSpace>512 GB</storageSpace>
+			<ram>16GB</ram>
+			<graphicsCard>Radeon Pro 560X with 4GB of GDDR5 memory</graphicsCard>
+            <graphicsCard>Intel UHD Graphics 630</graphicsCard>
+			<display>Retina display</display>
+			<touchBar>yes</touchBar>
+		</specs>
+		<price>&#36;2799</price>
+    </computer>
+</laptops>

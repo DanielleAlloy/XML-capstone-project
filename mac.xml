@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Macintosh Laptop Computers
+	BCS 303 - Midterm Project
+
+    Filename: laptops.xml
+    Author:   Danielle Hyland
+    Date:     
+-->
+
+<laptops>
+	<computer>
+		<name></name>
+		<modelNumber>This one will beban siType data type</modelNumber>
+		<size></size>
+		<dateReleased></dateReleased>
+		<specs>
+			<processor></processor>
+			<storageSpace></storageSpace>
+			<ram>enumeration</ram>
+			<graphicsCard>should i have an option for dedicated or integrated?</graphicsCard>
+			<display></display>
+			<touchBar>yes or no emuneration </touchBar>
+		</specs>
+		<price>&#36;</price>
+	</computer>
+</laptops>

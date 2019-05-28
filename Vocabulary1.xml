@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    Macintosh Laptop Computers Comparison
+		BCS 303 - Midterm Project
+
+    Filename: Vocabulary1.xml
+    Author:   Danielle Hyland
+    Date:     10/10/18
+
+		Filename:          Vocabulary1.xml
+		Supporting file:   Vocab1DTD.dtd
+-->
+<!--Links Vocabulary1.xml to the DTD for validation-->
+<!DOCTYPE laptops SYSTEM "Vocab1DTD.dtd">
+
+<?xml-stylesheet type="text/xsl" href="home.xsl" ?>
+
+<!--List of different Macintosh Laptop computers-->
+<laptops>
+  <!--First instance of computer element-->
+	<computer>
+	  <model modelNumber="A1708">
+		<!--Entity Reference &A1708; 13 inch MacBook Pro; Mid 2017-->
+		<desc>&A1708;</desc>
+		<specs>
+			<processor>2.3GHz dual-core Intel Core i5</processor>
+			<storageSpace>128 GB SSD</storageSpace>
+			<ram>8GB</ram>
+			<!--one of more instances of graphicsCard-->
+			<graphicsCard>Intel Iris Plus Graphics 640</graphicsCard>
+			<display>Retina display</display>
+			<touchBar included="N">no</touchBar>
+		</specs>
+		<price currency="USD">&#36;1299</price>
+	  </model>
+	</computer>	 
+	<!--Second instance of computer element-->
+  <computer>
+	  <model modelNumber="A1708">
+		<!--Entity Reference &A1708; 13 inch MacBook Pro; Mid 2017-->
+		<desc>&A1708;</desc>
+		<specs>
+			<processor>2.3GHz dual-core Intel Core i5</processor>
+			<storageSpace>256 GB SSD</storageSpace>
+			<ram>8GB</ram>
+			<!--one of more instances of graphicsCard-->
+			<graphicsCard>Intel Iris Plus Graphics 640</graphicsCard>
+			<display>Retina display</display>
+			<touchBar included="N">no</touchBar>
+		</specs>
+		<price currency="USD">&#36;1499</price>
+	  </model>
+	</computer>
+	<!--Third instance of computer element-->
+  <computer>
+	  <model modelNumber="A1989">
+		<!--Entity Reference &A1989; 13 inch MacBook Pro; Mid 2018-->
+		<desc>&A1989;</desc>
+		<specs>
+			<processor>2.3GHz quad-core Intel Core i5</processor>
+			<storageSpace>256GB SSD</storageSpace>
+			<ram>8GB</ram>
+			<!--one of more instances of graphicsCard-->
+			<graphicsCard>Intel Iris Plus Graphics 655</graphicsCard>
+			<display>Retina display</display>
+			<touchBar included="Y">yes</touchBar>
+		</specs>
+		<price currency="USD">&#36;1799</price>
+	  </model>
+	</computer>
+	<!--Fourth instance of computer element-->
+  <computer>
+	  <model modelNumber="A1989">
+		<!--Entity Reference &A1989; 13 inch MacBook Pro; Mid 2018-->
+		<desc>&A1989;</desc>
+		<specs>
+			<processor>2.3GHz quad-core Intel Core i5</processor>
+			<storageSpace>512 GB SSD</storageSpace>
+			<ram>8GB</ram>
+			<!--one of more instances of graphicsCard-->
+			<graphicsCard>Intel Iris Plus Graphics 655</graphicsCard>
+			<display>Retina display</display>
+			<touchBar included="Y">yes</touchBar>
+		</specs>
+		<price currency="USD">&#36;1999</price>
+	  </model>
+	</computer>
+	<!--Fifth instance of computer element-->
+  <computer>
+	  <model modelNumber="A1990">
+		<!--Entity Reference &A1990; 15 inch MacBook Pro; Mid 2018-->
+		<desc>&A1990;</desc>
+		<specs>
+			<processor>2.2GHz 6-core Intel Core i7</processor>
+			<storageSpace>256 GB SSD</storageSpace>
+			<ram>16GB</ram>
+			<!--one of more instances of graphicsCard-->
+			<graphicsCard>Radeon Pro 555X with 4GB of GDDR5 memory</graphicsCard>
+      <graphicsCard>Intel UHD Graphics 630</graphicsCard>
+			<display>Retina display</display>
+			<touchBar included="Y">yes</touchBar>
+		</specs>
+		<price currency="USD">&#36;2399</price>
+	  </model>
+  </computer>
+	<!--Sixth instance of computer element-->
+  <computer>
+	  <model modelNumber="A1990">
+		<!--Entity Reference &A1990; 15 inch MacBook Pro; Mid 2018-->
+		<desc>&A1990;</desc>
+		<specs>
+			<processor>2.6GHz 6-core Intel Core i7</processor>
+			<storageSpace>512 GB SSD</storageSpace>
+			<ram>16GB</ram>
+			<!--one of more instances of graphicsCard-->
+			<graphicsCard>Radeon Pro 560X with 4GB of GDDR5 memory</graphicsCard>
+      <graphicsCard>Intel UHD Graphics 630</graphicsCard>
+			<display>Retina display</display>
+			<touchBar included="Y">yes</touchBar>
+		</specs>
+		<price currency="USD">&#36;2799</price>
+	  </model>
+  </computer>
+</laptops>

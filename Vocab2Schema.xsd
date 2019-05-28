@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    Macintosh Desktop Computers Comparison
+	  BCS 303 - Midterm Project
+
+    Filename: Vocab2Schema.xsd
+    Author:   Danielle Hyland
+    Date:     11/03/18
+
+	Filename:          Vocab2Schema.xsd
+	Supporting file:   Vocabulary2.xml
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">	
+
+<!--Complex root element desktops that contains one or more of the child element computer-->
+<xs:element name="desktops">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="computer" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<!--Complex element computer that only contains the nested child model-->
+<xs:element name="computer">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="model" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<!--Complex element model that only contains the nested children elements desc, specs, and price, and also has the attribute modelNumber which is required-->
+<xs:element name="model">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="desc" /> 
+      <xs:element ref="specs" />
+      <xs:element ref="price" />
+    </xs:sequence>
+    <xs:attribute ref="modelNumber" use="required" />
+  </xs:complexType>
+</xs:element>
+
+<!--The attribute modelNumber contains string data-->
+<xs:attribute name="modelNumber" type="xs:string" />
+<!--The simple element desc contains string data-->
+<xs:element name="desc" type="xs:string" />
+
+<!--The complex element price, which contains string data, as well as an attribute currency, which is required-->
+<xs:element name="price">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute ref="currency" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:element>
+
+<!--The attribute currency which contains string data-->
+<xs:attribute name="currency" type="xs:string" />
+
+<!--Complex element spec that only contains the nested children elements processor, storageSpace, ram, graphicsCard (which may occur more then once), display and ports (which may occur more than once)-->
+<xs:element name="specs">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="processor" /> 
+      <xs:element ref="storageSpace" />
+      <xs:element ref="ram" />       
+      <xs:element ref="graphicsCard" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element ref="display" />
+      <xs:element ref="ports" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<!--Simple Element processor that contains string data-->
+<xs:element name="processor" type="xs:string" /> 
+<!--Simple Element storageSpace that contains string data-->
+<xs:element name="storageSpace" type="xs:string" />
+<!--Simple Element ram that contains string data-->
+<xs:element name="ram" type="xs:string" />      
+<!--Simple Element graphicsCard that contains string data-->
+<xs:element name="graphicsCard" type="xs:string" />
+<!--Simple Element display that contains string data-->
+<xs:element name="display" type="xs:string" />
+<!--Complex element type touchBar that only contains string data as well as the attribute included-->
+<xs:element name="ports" type="xs:string" />
+
+</xs:schema>
